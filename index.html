@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <title>Landing Page</title>
+    <title>Aesthetics by Grace</title>
+    
+    
+
   </head>
   <body>
     <header>
@@ -22,13 +25,13 @@
         <div class="hero-left">
           <h1>Aesthetics by Grace</h1>
           <p>
-            Subtext goes here under the main title. It's a smaller font and the
-            color is lower contrast.
+            Please send me your name and email below to book an appointment!
           </p>
           <form action="https://formsubmit.co/aestheticsbygraceaz@gmail.com" method="POST">
-            <input type="text" name="name" required>
-            <input type="email" name="email" required>
-            <button type="submit">Send</button>
+            <input class="form-input" type="text" placeholder="Name" name="name" required>
+            <input class="form-input" type="email" placeholder="Email Address" name="email" required>
+            <input class="form-input" type="tel" placeholder="Phone Number" name="phone" required>
+            <button class="button" type="submit">Send</button>
        </form>
         </div>
         <img class="header-img" />
@@ -36,34 +39,36 @@
     </section>
 
     <section class="section-two">
-      <h2>Some random information</h2>
-      <div class="container">
-        <div class="info">
-          <img src="small-placeholder.png" />
-          <div class="text">
-            This is some subtext under an illustration or image
-          </div>
+      <h2>Services Offered</h2>
+      <div class="flip">
+        <div class="front" style="background-image: url(style/assets/Botox-Forehead.jpg)">
+           <h1 class="text-shadow">BOTOX</hi>
         </div>
-        <div class="info">
-          <img src="small-placeholder.png" />
-          <div class="text">
-            This is some subtext under an illustration or image
-          </div>
+        <div class="back">
+           <h2>Angular</h2>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
         </div>
-        <div class="info">
-          <img src="small-placeholder.png" />
-          <div class="text">
-            This is some subtext under an illustration or image
-          </div>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url(style/assets/Botox_Cheek.jpg)">
+           <h1 class="text-shadow">SKINCARE</hi>
         </div>
-        <div class="info">
-          <img src="small-placeholder.png" />
-          <div class="text">
-            This is some subtext under an illustration or image
-          </div>
+        <div class="back">
+           <h2>Angular</h2>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
         </div>
-      </div>
-    </section>
+    </div>
+    <div class="flip">
+        <div class="front" style="background-image: url(style/assets/Lip-Filler.jpg)">
+           <h1 class="text-shadow">LIP FILLER</hi>
+        </div>
+        <div class="back">
+           <h2>Angular</h2>
+           <p>Good tools make application development quicker and easier to maintain than if you did everything by hand..</p>
+        </div>
+    </div>
+
+    <br>
 
     <section class="section-three">
       <div class="quote">
@@ -83,4 +88,5 @@
 
     <footer>Copyright © Imperial Grace</footer>
   </body>
+  
 </html>
