@@ -20,7 +20,7 @@ body {
 
 html,
 body {
-  overflow-x: hidden;
+  width: 100%;
 }
 
 /* HEADER */
@@ -59,8 +59,9 @@ header nav ul {
   float: right;
   display: flex;
   gap: 36px;
+
   padding-right: 15%;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
 }
 
 header nav ul li {
@@ -273,15 +274,16 @@ header nav ul a:hover {
 .section-three {
   background-color: var(--secondary-color);
   height: 350px;
-
+  margin-bottom: auto;
   display: block;
+  height: auto;
 }
 
 .quote {
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
-  padding: 5% 15%;
+  padding: 0;
 }
 
 .author {
@@ -290,6 +292,61 @@ header nav ul a:hover {
   display: flex;
   justify-content: flex-end;
   margin-right: auto;
+}
+
+.social-icon {
+  color: var(--primary-color);
+}
+
+.sidebar {
+  margin: 50px 50px;
+  width: 10%;
+  float: left;
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+#contact-me {
+  display: flex;
+  justify-content: start;
+}
+
+.contact-info {
+  flex: 2 70%;
+  padding: 50px 25px;
+  display: table;
+  border-top: 5px solid var(--tertiary-color);
+  margin: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 28px;
+  width: 100%;
+}
+
+.contact-info ul li a {
+  padding: 15px 20px;
+  font-weight: normal;
+  font-size: 45px;
+  color: var(--primary-color);
+  display: table;
+  margin: 0px auto 0px auto;
+  text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+  text-shadow: none;
 }
 
 /* FOOTER  */
@@ -301,23 +358,25 @@ footer {
   align-items: center;
   height: 60px;
   margin-top: auto;
+  position: absolute;
+  width: 100%;
 }
 
 /* Media Query for mobile phones and smaller */
 @media screen and (max-width: 980px) {
+  .page-title {
+    width: 100%;
+    display: flex;
+    font-size: 250%;
+    position: relative;
+    padding: 0 7px;
+  }
+
   header {
     padding-bottom: 0;
     justify-content: center;
     position: relative;
     height: 23vh;
-  }
-
-  header h1 {
-    width: 100%;
-    padding: 0 30%;
-    font-size: 250%;
-
-    justify-content: center;
   }
 
   header nav ul {
@@ -329,6 +388,26 @@ footer {
 
   header nav ul li a {
     font-size: 50px;
+  }
+
+  .hero-section {
+    margin: auto;
+  }
+
+  .section-title {
+    width: 75%;
+  }
+
+  .flip {
+    width: 100%;
+  }
+
+  .section-three {
+    max-width: fit-content;
+  }
+
+  .quote {
+    padding: 0px 5px;
   }
 }
 
