@@ -402,12 +402,31 @@ footer {
     width: 100%;
   }
 
-  .section-three {
-    max-width: fit-content;
-  }
-
   .quote {
     padding: 0px 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact ul {
+    padding: 0;
+  }
+
+  .contact ul li a {
+    font-size: 20px;
   }
 }
 
