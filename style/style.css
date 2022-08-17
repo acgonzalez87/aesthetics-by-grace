@@ -25,7 +25,7 @@ body {
 
 /* HEADER */
 header {
-  background-color: var(--primary-color);
+  background-color: #8b6c5c;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -279,6 +279,42 @@ header nav ul a:hover {
   height: auto;
 }
 
+.about-me {
+  background-color: #a08679;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 30px;
+}
+
+.profile {
+  width: 400px;
+  height: auto;
+  border: 1%;
+  border-style: solid;
+  border-width: 3px;
+  border: var(--primary-color);
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+
+.about-me img {
+  display: grid;
+}
+
+.info {
+  float: right;
+  color: var(--secondary-color);
+  font-size: xx-large;
+  padding-top: 15%;
+}
+
 .quote {
   font-size: 36px;
   font-style: italic;
@@ -416,7 +452,17 @@ footer {
     width: 100%;
   }
 
-  .quote {
+  .about-me {
+    flex-direction: column;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .info {
     padding: 0px 5px;
   }
 
